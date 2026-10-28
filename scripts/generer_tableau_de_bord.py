@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Génère le tableau de bord Home Assistant « Compteur d'eau » avec une vue par voisin déclaré.
 
 Le script lit :

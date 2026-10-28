@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Les scripts lancés par les workflows reçoivent leurs dépendances.
 
 Régression couverte : ``scripts/check_branch_protection.py`` importe loguru
