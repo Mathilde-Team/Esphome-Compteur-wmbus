@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de ``scripts/ci_voisins.py`` (issue #48, couverture à 95 %).
 
 Le script travaille sur des copies des vrais ``compteur-eau-lora.yaml`` et

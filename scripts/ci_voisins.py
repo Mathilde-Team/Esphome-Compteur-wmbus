@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """CI : écrit une variante de compteur-eau-lora.yaml avec N voisins (0 à 10, numéros factices).
 
     python3 scripts/ci_voisins.py 10            # → ci-voisins-10.yaml + ci-secrets-10.yaml
