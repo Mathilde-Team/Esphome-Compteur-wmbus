@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Tests de ``scripts/generer_tableau_de_bord.py`` (issue #48, couverture à 95 %).
 
 Les tests de bout en bout utilisent les vrais fichiers du dépôt

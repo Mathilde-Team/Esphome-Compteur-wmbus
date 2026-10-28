@@ -44,7 +44,7 @@ La coque est vendue pour la V3 de la carte, mais elle est **100 % compatible ave
 | `ha_dashboard_compteur_eau.yaml` | Tableau de bord Home Assistant « Compteur d'eau » (vue de base) |
 | `scripts/generer_tableau_de_bord.py` | Génère le tableau de bord complet, avec une vue « Voisins » pour les voisins déclarés |
 | `scripts/ci_voisins.py` | CI : variante de la configuration avec 0 à 10 voisins de test |
-| `LICENSE` | Licence MIT |
+| `LICENSE` | Licence GPL-3.0-or-later |
 | `.github/` | CI, garde `dev` → `main`, règles de protection versionnées |
 
 ## Installation
@@ -812,8 +812,15 @@ Le dépôt suit le socle qualité de Mathilde-Team :
 
 ## Licence
 
-[MIT](LICENSE) © 2026 Mathilde Deuscher.
+Le code de ce dépôt est sous [GPL-3.0-or-later](LICENSE) (SOCLE.md §1, #65). Les en-têtes `# SPDX-License-Identifier: GPL-3.0-or-later` figurent en tête des fichiers de `scripts/` et `tests/`.
+
+Composants externes, chargés au build mais pas versionnés ici :
+
+- [SzczepanLeon/esphome-components](https://github.com/SzczepanLeon/esphome-components) (`wmbus_radio`, `wmbus_meter`, `wmbus_common`) : **aucun fichier de licence en amont au 28/10/2026** (constat #65) ; ses drivers de décodage sont dérivés de [wmbusmeters](https://github.com/wmbusmeters/wmbusmeters), projet sous GPL.
+- [Material Design Icons](https://pictogrammers.com/library/mdi/) pour les pictogrammes de l'écran (police téléchargée au build, licence Pictogrammers).
+
+Historique git vérifié (#65) : tous les contributeurs sont membres de l'organisation Mathilde-Team ; `compteur-eau-lora.yaml`, `options/` et `voisins/` ont été écrits dans ce dépôt (commit initial de MathildeDec), aucun code externe n'y est repris.
 
 ## Crédits
 
-[ESPHome](https://esphome.io), [Home Assistant](https://www.home-assistant.io), [SzczepanLeon/esphome-components](https://github.com/SzczepanLeon/esphome-components) pour le décodage wM-Bus, [Material Design Icons](https://pictogrammers.com/library/mdi/) pour les pictogrammes de l'écran.
+[ESPHome](https://esphome.io), [Home Assistant](https://www.home-assistant.io), [SzczepanLeon/esphome-components](https://github.com/SzczepanLeon/esphome-components) pour le décodage wM-Bus, [wmbusmeters](https://github.com/wmbusmeters/wmbusmeters) dont ses drivers dérivent, [Material Design Icons](https://pictogrammers.com/library/mdi/) pour les pictogrammes de l'écran.
